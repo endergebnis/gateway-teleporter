@@ -1,0 +1,17 @@
+name: GatewayTeleporter
+version: '${project.version}'
+main: gg.endergebnis.gatewaytp.GatewayTeleporterPlugin
+api-version: '26.3'
+author: Alex
+description: Gepaarte Teleporter auf Basis des End-Gateways
+
+commands:
+  gatewaytp:
+    description: Teleporter-Verwaltung
+    usage: /gatewaytp give [spieler] [anzahl]
+    permission: gatewaytp.give
+
+permissions:
+  gatewaytp.give:
+    description: Teleporter per Befehl geben
+    default: op
